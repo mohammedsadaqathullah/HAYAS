@@ -1,0 +1,204 @@
+.navContainer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+
+.navContainer ul {
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    color: rgb(250, 94, 146);
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 1px;
+
+}
+
+.navContainer .ulOne {
+    padding-left: 10px;
+    width: 70px;
+    align-self: center;
+
+}
+
+
+.navContainer img {
+    margin-left: 20px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    transform: scale(2);
+    width: 130px;
+    cursor: pointer;
+}
+
+
+.navContainer .ulTwo {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.navContainer .ulTwo li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    /* border: 0.5px solid rgb(82, 81, 81); */
+}
+
+.navContainer .ulTwo li:hover {
+    transition: all 0.1s linear;
+    transform: scale(1.05);
+    border-radius: 20px;
+    /* filter: drop-shadow(0px 5px 50px #fffdfd); */
+
+}
+
+.border {
+    border: 0.5px solid rgb(51, 51, 51);
+    border-radius: 20px;
+}
+
+.navContainer .ulTwo .logout {
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    /* width: 170px; */
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgb(243, 28, 28);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    /* border: 0.5px solid rgb(82, 81, 81); */
+}
+
+.navContainer .ulTwo .downloadAPK {
+    margin-top: -4px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    /* width: 170px; */
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgb(1, 136, 30);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    /* border: 0.5px solid rgb(82, 81, 81); */
+}
+
+
+@media screen and (max-width: 1131px) {
+    .navContainer .ulOne {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navContainer .ulOne img {
+        padding: 5px;
+    }
+
+    .navContainer .ulOne .hamburger {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        gap: 4px;
+        padding-top: 25px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .navContainer .ulOne .hamburger div {
+        border-radius: 20px;
+        margin-bottom: 5px;
+        width: 55px;
+        height: 5px;
+        background-color: rgb(255, 249, 253);
+        cursor: pointer;
+    }
+
+
+    .navContainer .ulTwo li {
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .navContainer .ulTwo li button {
+        margin-top: 20px;
+        font-size: 16px;
+        /* width: 150px; */
+        padding: 10px;
+
+        cursor: pointer;
+    }
+
+    #showMenu {
+        margin-top: 80px;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        cursor: pointer;
+        background-color: black;
+        transform-style: preserve-3d;
+        animation: showMenu 1s ease-in-out;
+        z-index: 2000;
+    }
+
+    @keyframes showMenu {
+        from {
+            transform: translateX(400px);
+        }
+    }
+
+    #notShowMenu {
+        background-color: black;
+        margin-top: 80px;
+        font-weight: 600;
+        font-size: 16px;
+        display: none;
+        animation: notShowMenu 1s ease-in-out;
+        z-index: 2000;
+    }
+
+    @keyframes notShowMenu {
+        from {
+            display: flex;
+        }
+
+        to {
+            transform: translateX(1000px);
+        }
+    }
+
+
+    .navContainer .ulTwo {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        position: fixed;
+        background-color: rgb(19, 4, 19);
+        cursor: pointer;
+    }
+
+
+}

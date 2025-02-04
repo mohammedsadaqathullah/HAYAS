@@ -1,0 +1,12 @@
+@media screen and (max-width: 1131px) {
+    .productshomepage {
+        display: none;
+    }
+}
+
+.cont {
+    width: 100%;
+    background: rgb(252, 236, 241);
+    background: linear-gradient(158deg, rgba(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
+
+}

@@ -1,0 +1,87 @@
+/* Register.css */
+
+.registerContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+.logo {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.registerContainer div {
+    width: 100%;
+    height: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.registerContainer div img {
+    /* object-fit: contain; */
+    /* max-width: 100%; */
+    /* border: 1px solid red; */
+    /* display: block; */
+    width: 200px;
+    height: 170px;
+    transform: scale(5);
+}
+
+.inputs {
+    z-index: 1000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 25px;
+    color: black;
+    border: 1px solid white;
+    background-color: #ced4da;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputFocussed {
+    background-color: black;
+    color: white;
+}
+
+.registerContainer .button {
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    background-color: #0466c8;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+.errorCode {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.registerContainer .redirect {
+    z-index: 1000;
+    color: lightblue;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    border: 2px solid #1b263b;
+    padding: 5px;
+    cursor: pointer;
+}

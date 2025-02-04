@@ -1,0 +1,192 @@
+.advertisementContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    height: 50%;
+    overflow: hidden;
+
+}
+
+.advertisementContainer .one,
+.advertisementContainer .three {
+    position: relative;
+}
+
+.advertisementContainer .imageContainer {
+    overflow: hidden;
+}
+
+
+.advertisementContainer .one img,
+.advertisementContainer .three img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(26, 17, 26, 0.1) 0px 4px 16px, rgba(26, 17, 26, 0.1) 0px 8px 24px, rgba(26, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.advertisementContainer .productsCategory {
+    display: none;
+    order: 2;
+}
+
+/* 
+.advertisementContainer .nextbtn {
+    position: absolute;
+    right: 0px;
+    top: 45%;
+    width: 60px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px 10px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.advertisementContainer .prevbtn {
+    position: absolute;
+    left: 0px;
+    top: 45%;
+    width: 60px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px 20px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.advertisementContainer .nextbtn:hover,
+.advertisementContainer .prevbtn:hover {
+    opacity: 1;
+    background-color: rgb(252, 193, 252);
+} */
+
+.advertisementContainer .one .gifContainer img {
+    box-shadow: none;
+    margin-top: 10px;
+    /* filter: drop-shadow(-5px 0px 0px rgb(238, 11, 144)); */
+    width: 110px;
+    height: 90px;
+    animation: bikelefttoright 10s infinite ease-in-out;
+}
+
+@keyframes bikelefttoright {
+    from {
+        transform: translateX(-400%);
+    }
+
+    to {
+        transform: translateX(1600%);
+    }
+}
+
+.advertisementContainer .three .gifContainer img {
+    box-shadow: none;
+    margin-top: 10px;
+    /* filter: drop-shadow(-5px 0px 50px rgb(238, 11, 144)); */
+    width: 110px;
+    height: 90px;
+    transform: rotateY(180deg) translateX(-320%);
+    animation: bikerighttoleft 10s infinite ease-in-out;
+    animation-fill-mode: none;
+}
+
+@keyframes bikerighttoleft {
+    from {
+        transform: rotateY(180deg) translateX(-550%);
+    }
+
+    to {
+        transform: rotateY(180deg) translateX(1300%);
+
+    }
+}
+
+.advertisementContainer video {
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(26, 17, 26, 0.1) 0px 4px 16px, rgba(26, 17, 26, 0.1) 0px 8px 24px, rgba(26, 17, 26, 0.1) 0px 16px 56px;
+    filter: saturate(1.4);
+    order: 1;
+    animation: video 2s ease-in;
+
+}
+
+@keyframes video {
+    from {
+        transform: scale(0.5) rotateX(90deg);
+    }
+}
+
+.advertisementContainer .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.advertisementContainer button {
+    margin-top: 2px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #000000;
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    width: 100px;
+}
+
+@media screen and (max-width: 1131px) {
+    .advertisementContainer {
+        flex-wrap: wrap;
+    }
+
+    .advertisementContainer .one {
+        order: 3;
+    }
+
+    .advertisementContainer .two {
+        order: 1;
+    }
+
+    .advertisementContainer .three {
+        order: 4;
+    }
+
+    .advertisementContainer video {
+        width: 100%;
+    }
+
+    .advertisementContainer .two button {
+        transform: scale(0.7);
+    }
+
+    .advertisementContainer .one,
+    .advertisementContainer .two {
+        align-self: center;
+    }
+
+    .gifContainer {
+        display: none;
+    }
+
+    .advertisementContainer .one img,
+    .advertisementContainer .three img {
+        width: 500px;
+    }
+
+    .advertisementContainer .productsCategory {
+        display: inline-block;
+        order: 2;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .advertisementContainer .one img,
+    .advertisementContainer .three img {
+        width: 250px;
+    }
+}

@@ -1,0 +1,262 @@
+.food-body {
+    width: 100%;
+    /* padding-top: 5px; */
+}
+
+.food-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-head {
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search .input {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.search a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 20%;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.cart-logo-cont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 30%;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.cart-length {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-boxes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-box {
+    width: 22%;
+    /* Slightly reduced width */
+    /* height: 400px; */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards {
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.product-image {
+    width: 180px;
+    height: 150px;
+}
+
+.title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.food-boxes .quantity-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+}
+
+.quantity-container button {
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+}
+
+.quantity-container span {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.cart-file {
+    padding: 1px;
+    padding-bottom: 50px;
+}
+
+.cart-heading {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.cart-item .card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cart-item .card .count-container {
+    display: flex;
+    gap: 20px;
+}
+
+.cart-item .card .count-container button {
+    background-color: black;
+    color: white;
+    width: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    /* padding: 10px; */
+}
+
+.address-section {
+    margin-top: 10px;
+}
+
+.address-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.address-section :last-child {
+    background-color: #ffd60a;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.place-order-btn:disabled {
+    background-color: #ddd;
+}
+
+@media (max-width: 992px) {
+    .main-box {
+        width: 45%;
+        /* Two cards per row */
+    }
+}
+
+@media (max-width: 750px) {
+    .main-box {
+        width: 90%;
+        /* One card per row */
+    }
+}
+
+@media (max-width: 400px) {
+    .cart-file .cart-item-text {
+        font-size: 12px;
+    }
+
+    .cart-item .card .count-container button {
+        font-size: 12px;
+        width: 20px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 275px) {
+    .cart-file .cart-item-text {
+        font-size: 10px;
+    }
+
+    .cart-item .card .count-container button {
+        font-size: 12px;
+        width: 20px;
+        padding: 0;
+    }
+}
