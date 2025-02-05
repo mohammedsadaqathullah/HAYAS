@@ -1,5 +1,4 @@
 .categoriesContainer {
-    padding-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -88,7 +87,16 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .categoriesContainer {
+        padding-top: 40px;
+    }
+}
+
 @media screen and (max-width: 540px) {
+    .categoriesContainer {
+        padding-top: 30px;
+    }
 
     .categoriesContainer .groceryBox,
     .categoriesContainer .foodBox {

@@ -6,7 +6,7 @@
     margin-top: 5px;
     height: 50%;
     overflow: hidden;
-    padding-bottom: 50px;
+
 }
 
 .advertisementContainer .one,
@@ -183,7 +183,16 @@
 
 }
 
+@media screen and (max-width: 900px) {
+    .advertisementContainer {
+        padding-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 540px) {
+    .advertisementContainer {
+        padding-bottom: 50px;
+    }
 
     .advertisementContainer .one img,
     .advertisementContainer .three img {
