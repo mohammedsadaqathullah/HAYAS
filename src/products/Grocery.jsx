@@ -123,7 +123,7 @@ const Grocery = () => {
             <Navbar />
             <div className="grocery-container">
                 <div className="grocery-head">
-                    <h1 className="heading">Grocery List</h1>
+                    <h1 className="heading">Grocery Items</h1>
                 </div>
                 <div className="search">
                     <input

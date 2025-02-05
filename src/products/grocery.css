@@ -14,8 +14,8 @@
     margin-bottom: 20px;
 }
 
-.heading {
-    font-size: 24px;
+.grocery-head .heading {
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
@@ -154,11 +154,16 @@
 }
 
 .cart-file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1px;
     padding-bottom: 50px;
 }
 
 .cart-heading {
+    width: 90%;
+    border-radius: 5px;
     background-color: black;
     color: white;
     text-align: center;
@@ -167,6 +172,7 @@
 }
 
 .cart-item {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -179,11 +185,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .cart-item .card .count-container {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -197,11 +204,16 @@
 }
 
 .address-section {
+    width: 80%;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.address-input {
-    width: 100%;
+.address-section input {
+
+    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
@@ -213,7 +225,7 @@
     padding: 10px;
     font-size: 16px;
     font-weight: 900;
-    width: 100%;
+    width: 70%;
     border-radius: 10px;
     cursor: pointer;
     color: black;
@@ -221,6 +233,7 @@
 
 .place-order-btn:disabled {
     background-color: #ddd;
+    width: 70%;
 }
 
 @media (max-width: 992px) {

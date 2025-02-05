@@ -27,23 +27,23 @@
 }
 
 .container .imageCont .logo img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 0;
 }
 
 .aboutContent {
-    width: 100%;
-    padding: 20px;
+    width: 85%;
+    /* padding: 20px; */
     border-radius: 50px;
     align-items: center;
 }
 
 .aboutText {
-    padding-right: 20px;
-    padding-left: 20px;
+    /* padding-right: 10px; */
+    /* padding-left: 20px; */
     text-align: center;
     padding-bottom: 10px;
     /* font-weight: 600; */
@@ -66,11 +66,13 @@
 
 
 .statsContainer {
-    padding: 5px;
-    width: 100%;
-    align-items: center;
-    height: 520px;
+    /* padding: 5px; */
+    width: 95%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    /* height: 700px; */
 }
 
 .statsText {
@@ -91,7 +93,7 @@
 }
 
 .socialContainer {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
